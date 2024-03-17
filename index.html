@@ -10,22 +10,12 @@
 <body>
 
 <div class="titleContainer">
-    <div class="title">Pepper对话</div>
+    <div class="title">与Pepper对话</div>
 </div>
 
-<!-- 用户的状态：录音中【结束录音】；语音识别中；识别文字 -->
-<div class="message">
-    <div class="talker">You:</div>
-    <div id="userContent" class="content" style="color: darkgray;">
-        <div class="button" onclick="startRecord()">点击录音</div>
-    </div>
-</div>
-
-
-<!-- pepper的状态：等待对话中；回应文字 -->
-<div class="message">
-    <div class="talker">Pepper:</div>
-    <div id="pepperContent" class="content" style="color: darkgray;">等待对话中...</div>
+<div class="main">
+    <div id="state" class="state">🎤</div>
+    <div id="button" class="button" onclick="startRecord()">点击录音</div>
 </div>
 
 <div class="footer">
